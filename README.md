@@ -3,6 +3,7 @@
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![YOLOv8](https://img.shields.io/badge/YOLOv8-Ultralytics-00FFFF.svg)](https://github.com/ultralytics/ultralytics)
 [![Streamlit](https://img.shields.io/badge/Streamlit-Dashboard-FF4B4B.svg)](https://streamlit.io)
+[![Deploy to Streamlit](https://img.shields.io/badge/Deploy-Streamlit%20Cloud-FF4B4B.svg)](https://share.streamlit.io)
 
 ## 🎯 What is This?
 
@@ -14,6 +15,12 @@ An **AI-powered Formula 1 penalty prediction system** that:
 - 🎨 Beautiful interactive Streamlit dashboard
 
 **Built for Nvidia-Dell Hackathon 2024**
+
+---
+
+## 🌐 Live Demo
+
+🚀 **[View Live Dashboard](https://share.streamlit.io)** *(Deploy following STREAMLIT_DEPLOYMENT.md)*
 
 ---
 
@@ -32,13 +39,16 @@ source f1_env/bin/activate  # Windows: f1_env\Scripts\activate
 pip install -r requirements.txt
 ```
 
-### 2. Run Dashboard
+### 2. Run Dashboard Locally
 ```bash
 streamlit run code/ultimate_dashboard.py
 ```
 
-### 3. Open Browser
-Go to: `http://localhost:8501`
+### 3. Or Deploy to Cloud (Permanent Hosting!)
+See **[STREAMLIT_DEPLOYMENT.md](STREAMLIT_DEPLOYMENT.md)** for step-by-step deployment to Streamlit Cloud (FREE!)
+
+### 4. Open Browser
+Go to: `http://localhost:8501` (local) or your Streamlit Cloud URL
 
 **That's it! 🎉**
 
