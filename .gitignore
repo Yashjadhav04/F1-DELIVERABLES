@@ -61,7 +61,7 @@ results/visualizations/*.png
 logs/
 
 # Streamlit
-.streamlit/
+.streamlit/secrets.toml
 
 # Jupyter
 .ipynb_checkpoints/
