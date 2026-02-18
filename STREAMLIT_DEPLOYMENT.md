@@ -63,11 +63,22 @@ F1-DELIVERABLES/
 
 ## 📋 Important Notes
 
-### Model File Size
+### Common Deployment Issues & Solutions
+
+#### 🔴 Requirements Installation Error
+**Problem**: "Error installing requirements" in Streamlit Cloud
+
+**Solution**: The `requirements.txt` has been optimized for Streamlit Cloud. If you still see errors:
+- Check Streamlit Cloud logs for specific package conflicts
+- Ensure torch/torchvision versions are compatible
+- Numpy must be <2.0.0 for compatibility
+
+#### 🔴 Model File Size Error
 ⚠️ **Important**: Your `model/best.pt` file might be too large for GitHub (>100MB).
 
-If you get a file size error:
-1. Use Git Large File Storage (LFS):
+**Solution Options**:
+
+1. **Use Git Large File Storage (LFS)** (Recommended):
    ```bash
    cd /Users/yj/Downloads/F1_DAY_1
    git lfs install
@@ -78,9 +89,14 @@ If you get a file size error:
    git push
    ```
 
-2. Or host the model elsewhere and download it in the app:
+2. **Or host model externally** and download in app:
    - Upload to Google Drive, Dropbox, or Hugging Face
    - Add download code in `ultimate_dashboard.py`
+
+3. **Or remove model** for visualization-only dashboard:
+   - Remove model files from git
+   - Dashboard will still show training results and visualizations
+   - Live prediction will be disabled
 
 ### Data Files
 Your dataset folders are gitignored, but sample images are included:
